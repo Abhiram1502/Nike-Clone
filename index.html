@@ -26,7 +26,8 @@
         </section>
         <section class="nav2" id="navigation">
             <img src="images/logo.png" alt="Nike" title="Nike IN" height="65px" width="65px">
-            <ul class="nav2Links">
+            <ul class="nav2Links" id="navLinks">
+                <i id="cross" class="fa-regular fa-circle-xmark"></i>
                 <li><a href="">New & Featured</a></li>
                 <li><a href="">Men</a></li>
                 <li><a href="">Women</a></li>
@@ -41,6 +42,7 @@
                 </div>
                 <i class="fa-regular fa-heart" title="Favorites"></i>
                 <i class="fa-solid fa-bag-shopping" title="Bag: 0 items"></i>
+                <i id="bars" class="fa-solid fa-bars"></i>
             </div>
         </section>
     </nav>
@@ -64,7 +66,7 @@
             Up To 40% Off &nbsp;<i class="fa-solid fa-diamond"></i>&nbsp; Up To 40% Off &nbsp;<i class="fa-solid fa-diamond"></i>&nbsp; Up To 40% Off &nbsp;<i class="fa-solid fa-diamond"></i>&nbsp; Up To 40% Off &nbsp;<i class="fa-solid fa-diamond"></i>&nbsp; Up To 40% Off &nbsp;<i class="fa-solid fa-diamond"></i>&nbsp; Up To 40% Off &nbsp;<i class="fa-solid fa-diamond"></i>&nbsp; Up To 40% Off &nbsp;<i class="fa-solid fa-diamond"></i>&nbsp; Up To 40% Off &nbsp;<i class="fa-solid fa-diamond"></i>&nbsp; Up To 40% Off &nbsp;<i class="fa-solid fa-diamond"></i>&nbsp; Up To 40% Off  &nbsp;<i class="fa-solid fa-diamond"></i>&nbsp; Up To 40% Off  &nbsp;<i class="fa-solid fa-diamond"></i>&nbsp; Up To 40% Off 
         </div>
     </div>-->
-    <section class="hero-section">
+    <section class="hero-section" loading="eager">
         <div class="hero">
             <div class="hero-controls">
                 <i class="fa-solid fa-angle-left" onclick="prevSlide()"></i>
@@ -357,8 +359,8 @@
                     <img src="images/trend2.jpg" alt="">
                 </div>
                 <div class="trend">
-                    <img src="images/trend3.png" alt="">
-                    <p>Air Force 1</p>
+                    <img src="images/trend4.png" alt="">
+                    <p>Cosmic Runner</p>
                 </div>
             </div>
         </div>
@@ -623,29 +625,31 @@
         </div>
         <div class="footer2">
             <p>© 2025 Nike, Inc. All rights reserved</p>
-            <div class="guide" id="guide">
-                <div class="guide-options" id="guide-options">
-                    <p><a href="#">Nike Adapt</a></p>
-                    <p><a href="#">Nike Air</a></p>
-                    <p><a href="#">Nike Air Force 1</a></p>
-                    <p><a href="#">Nike Air Max</a></p>
-                    <p><a href="#">Nike FlyEase</a></p>
-                    <p><a href="#">Nike Flyknit</a></p>
-                    <p><a href="#">Nike Flyleather</a></p>
-                    <p><a href="#">Nike Free</a></p>
-                    <p><a href="#">Nike Joyride</a></p>
-                    <p><a href="#">Nike Pegasus</a></p>
-                    <p><a href="#">Nike React</a></p>
-                    <p><a href="#">Nike Vaporfly</a></p>
-                    <p><a href="#">Nike Zoom Fly</a></p>
-                    <p><a href="#">Nike ZoomX</a></p>
+            <div class="footer2-content">
+                <div class="guide" id="guide">
+                    <div class="guide-options" id="guide-options">
+                        <p><a href="#">Nike Adapt</a></p>
+                        <p><a href="#">Nike Air</a></p>
+                        <p><a href="#">Nike Air Force 1</a></p>
+                        <p><a href="#">Nike Air Max</a></p>
+                        <p><a href="#">Nike FlyEase</a></p>
+                        <p><a href="#">Nike Flyknit</a></p>
+                        <p><a href="#">Nike Flyleather</a></p>
+                        <p><a href="#">Nike Free</a></p>
+                        <p><a href="#">Nike Joyride</a></p>
+                        <p><a href="#">Nike Pegasus</a></p>
+                        <p><a href="#">Nike React</a></p>
+                        <p><a href="#">Nike Vaporfly</a></p>
+                        <p><a href="#">Nike Zoom Fly</a></p>
+                        <p><a href="#">Nike ZoomX</a></p>
+                    </div>
+                    Guides
+                    <i class="fa-solid fa-angle-down" id="guide-arrow"></i>
                 </div>
-                Guides
-                <i class="fa-solid fa-angle-down" id="guide-arrow"></i>
+                <p><a href="">Terms of Sale</a></p>
+                <p><a href="">Terms of Use</a></p>
+                <p><a href="">Nike Privacy Policy</a></p>
             </div>
-            <p><a href="">Terms of Sale</a></p>
-            <p><a href="">Terms of Use</a></p>
-            <p><a href="">Nike Privacy Policy</a></p>
         </div>
     </section>
     <script src="script.js"></script>

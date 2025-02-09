@@ -165,7 +165,10 @@ const price= document.querySelectorAll('.price');
 const newPrice=document.querySelectorAll('.new-price');
 setTimeout(() => {
     price.forEach(item=>{
-        item.style.setProperty('--after-width', '65px'); 
+        item.style.setProperty('--after-width', '70px'); 
+        if(window.matchMedia("(max-width: 500px)").matches){
+            item.style.setProperty('--after-width', '50px'); 
+        }
     })
     newPrice.forEach(newp=>{
         newp.style.transform='translateX(0%)';
@@ -207,4 +210,13 @@ const changeImage=document.getElementById('change-img');
 changeImage.addEventListener('mouseover',()=>{
     heroImage.src="images/airforcecolorchange.png";
     changeImage.src="images/airforcehero.png";
+})
+const bars=document.getElementById('bars');
+const cross=document.getElementById('cross');
+const navLinks=document.getElementById('navLinks');
+bars.addEventListener('click',()=>{
+    navLinks.style.display='block';
+})
+cross.addEventListener('click',()=>{
+    navLinks.style.display='none';
 })
